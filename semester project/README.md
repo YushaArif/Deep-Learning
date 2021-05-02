@@ -11,5 +11,4 @@ artifacts such as color discrepancy and blurriness. Post processing is usually u
 such artifacts, but are expensive and may fail. We propose the use of partial convolutions,
 where the convolution is masked and renormalized to be conditioned on only valid pixels.
 We further include a mechanism to automatically generate an updated mask for the next
-layer as part of the forward pass. Our model consistently outperforms other methods for
-irregular masks.
+layer as part of the forward pass. 
