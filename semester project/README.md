@@ -1,4 +1,4 @@
-# Image Inpainting Using Partial Convolution 
+# Image Inpainting Using Partial Convolution ( In Progress) 
 
 # ABSTRACT:
 Image inpainting is the task of filling in holes in an image and can be used in many
