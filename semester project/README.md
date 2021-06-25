@@ -1,14 +1,4 @@
-# Image Inpainting Using Partial Convolution ( In Progress) 
+# Image Super Resolution using SR-CNN 
 
 # ABSTRACT:
-Image inpainting is the task of filling in holes in an image and can be used in many
-applications. For example, it can be used in image editing to remove unwanted image
-content, while filling in the resulting space with plausible imagery. Existing deep learning
-based image inpainting methods use a standard convolutional network over the corrupted
-image, using convolutional filter responses conditioned on both valid pixels as well as the
-substitute values in the masked holes (typically the mean value). This often leads to
-artifacts such as color discrepancy and blurriness. Post processing is usually used to reduce
-such artifacts, but are expensive and may fail. We propose the use of partial convolutions,
-where the convolution is masked and renormalized to be conditioned on only valid pixels.
-We further include a mechanism to automatically generate an updated mask for the next
-layer as part of the forward pass. 
+We propose a deep learning method for single image super-resolution (SR). Our method directly learns an end-to-end mapping between the low/high-resolution images. The mapping is represented as a deep convolutional neural network (CNN) that takes the low-resolution image as the input and outputs the high-resolution one. We further show that traditional sparse-coding-based SR methods can also be viewed as a deep convolutional network. But unlike traditional methods that handle each component separately, our method jointly optimizes all layers. Our deep CNN has a lightweight structure, yet demonstrates state-of-the-art restoration quality, and achieves fast speed for practical on-line usage.  
